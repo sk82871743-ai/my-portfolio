@@ -1,0 +1,90 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#1e3c72,#2a5298,#6a11cb,#2575fc);
+background-size:400% 400%;
+animation: gradientMove 12s ease infinite;
+color:white;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+header{
+text-align:center;
+padding:80px 20px;
+}
+
+h1{
+font-size:45px;
+background: linear-gradient(to right,#00f2ff,#ff00ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+h2{
+font-size:32px;
+margin-bottom:30px;
+color:#00f2ff;
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background: linear-gradient(to right,#00f2ff,#ff00ff);
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+margin:10px;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00f2ff;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+.video-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+padding:20px;
+}
+
+.video-card{
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(10px);
+padding:15px;
+border-radius:20px;
+transition:.3s;
+}
+
+.video-card:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px #00f2ff;
+}
+
+video{
+width:100%;
+border-radius:15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,.4);
+}
